@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PPTApplication {
     public static void main( String[] args )
     {
-        System.out.println("running PPT");
         SpringApplication.run( PPTApplication.class, args );
     }
 }
