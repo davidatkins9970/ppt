@@ -1,4 +1,4 @@
-package com.forge51.ppt;
+package com.forge51.ppt.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

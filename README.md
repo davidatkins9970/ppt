@@ -1,6 +1,6 @@
-# ppt
+# ppt 
 
-I've successfully created a Spring Boot application with a Vue.js interface that can also be loaded as a desktop application using Electron. Here's what was accomplished:
+A Spring Boot application with a Vue.js interface that can also be loaded as a desktop application using Electron. Here's what was accomplished:
 
 ## Project Structure
 - **Spring Boot Backend**: Existing application with Maven configuration, using Spring Boot 3.5.7 and Java 21
