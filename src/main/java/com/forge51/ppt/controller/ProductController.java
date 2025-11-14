@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Collection;
+import java.util.Optional;
+import java.util.UUID;
 
 @Controller
 @RequiredArgsConstructor
@@ -23,6 +25,7 @@ public class ProductController {
     @GetMapping("/products/{productId}")
     public Product getProductById( @PathVariable String productId )
     {
-        return productService.get(productId).orElse(null);
+        return  productService.findById( UUID.fromString(productId) )
+                .orElse(null);
     }
 }

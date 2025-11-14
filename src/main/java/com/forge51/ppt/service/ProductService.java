@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -19,9 +20,9 @@ public class ProductService {
         return productRepository.findAll();
     }
 
-    public Optional<Product> get(String id )
+    public Optional<Product> findById( UUID productId )
     {
-        return productRepository.get(id);
+        return productRepository.findById(productId);
     }
 
     public void save( Product product )
